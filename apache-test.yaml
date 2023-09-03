@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  apache:
+    image: httpd:latest
+    container_name: apache-test
+    ports:
+    - "1234:80"
+    volumes:
+    - /home/pi/docker/apache-test:/usr/local/apache2/htdocs
